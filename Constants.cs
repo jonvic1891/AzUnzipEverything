@@ -6,6 +6,7 @@
         {
             public const string Zip = ".zip";
             public const string Rar = ".rar";
+            public const string Gzip= ".7z";
         }
     }
 }

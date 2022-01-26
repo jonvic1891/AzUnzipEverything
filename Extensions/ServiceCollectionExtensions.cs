@@ -28,6 +28,11 @@ namespace AzUnzipEverything.Extensions
                     Constants.SupportedExtensions.Rar,
                     new RarFileProcessor(provider.GetService<CloudBlobContainer>(),
                         provider.GetService<SecretSettings>(), provider.GetService<ILogger<RarFileProcessor>>())
+                },
+                {
+                    Constants.SupportedExtensions.Gzip,
+                    new RarFileProcessor(provider.GetService<CloudBlobContainer>(),
+                        provider.GetService<SecretSettings>(), provider.GetService<ILogger<ZipFileProcessor>>())
                 }
             });
         }
