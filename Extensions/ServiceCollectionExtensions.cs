@@ -30,7 +30,7 @@ namespace AzUnzipEverything.Extensions
                         provider.GetService<SecretSettings>(), provider.GetService<ILogger<RarFileProcessor>>())
                 },
                 {
-                    Constants.SupportedExtensions.Gzip,
+                    Constants.SupportedExtensions.gz,
                     new RarFileProcessor(provider.GetService<CloudBlobContainer>(),
                         provider.GetService<SecretSettings>(), provider.GetService<ILogger<ZipFileProcessor>>())
                 }
